@@ -4,8 +4,8 @@ import { Location } from '../entities/location.entity';
 import { Property } from '../entities/property.entity';
 import { IPropertiesService } from '../services/properties.service';
 import { CustomLoggerService } from '../../../common/nest/logger/custom-logger.service';
-import { Document } from '../../../modules/producer/entities/document.entity';
-import { IProducersService } from '../../../modules/producer/services/producers.service';
+import { Document } from '../../producers/entities/document.entity';
+import { IProducersService } from '../../producers/services/producers.service';
 import { Properties } from '../../../infrastructure/database/sequelize/entities/properties.entity';
 
 export class CreatePropertyUsecase {

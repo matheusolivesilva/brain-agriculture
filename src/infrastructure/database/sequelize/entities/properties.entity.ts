@@ -14,7 +14,6 @@ import { Producers } from './producers.entity';
 import { Locations } from './locations.entity';
 import { CropsPlanted } from './crops-planted.entity';
 import { ApiResponseProperty } from '@nestjs/swagger';
-import { Producer } from 'src/modules/producer/entities/producer.entity';
 
 @Table({ tableName: 'properties' })
 export class Properties extends Model {
@@ -55,7 +54,7 @@ export class Properties extends Model {
   @Column({ type: DataType.DATE, allowNull: false })
   updated_at: Date;
 
-  @ApiResponseProperty({ type: () => Producer })
+  @ApiResponseProperty({ type: () => Producers })
   @BelongsTo(() => Producers)
   producer: Producers;
 

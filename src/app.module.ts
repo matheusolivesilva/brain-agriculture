@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { ProducersModule } from './modules/producer/producers.module';
+import { ProducersModule } from './modules/producers/producers.module';
 import { SequelizeMod } from './infrastructure/database/sequelize/sequelize.module';
 import { PropertiesModule } from './modules/properties/properties.module';
 import { CropsModule } from './modules/crops/crops.module';

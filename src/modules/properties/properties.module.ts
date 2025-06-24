@@ -4,7 +4,7 @@ import { PropertiesController } from './properties.controller';
 import { CreatePropertyUsecase } from './usecases/create-property.usecase';
 import { CustomLoggerService } from '../../common/nest/logger/custom-logger.service';
 import { Properties } from '../../infrastructure/database/sequelize/entities/properties.entity';
-import { ProducersModule } from '../producer/producers.module';
+import { ProducersModule } from '../producers/producers.module';
 import { FindPropertiesUsecase } from './usecases/find-properties.usecase';
 import { States } from '../../infrastructure/database/sequelize/entities/states.entity';
 import { Cities } from '../../infrastructure/database/sequelize/entities/cities.entity';

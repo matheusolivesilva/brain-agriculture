@@ -1,6 +1,6 @@
 import { Controller, Get, Inject } from '@nestjs/common';
 import { GenerateStatisticsUsecase } from './usecases/generate-statistics.usecase';
-import { CustomLoggerService } from 'src/common/nest/logger/custom-logger.service';
+import { CustomLoggerService } from '../../common/nest/logger/custom-logger.service';
 import { ApiResponse } from '@nestjs/swagger';
 import { DashboardDto } from './dtos/dashboard.dto';
 

@@ -1,12 +1,12 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { col, fn } from 'sequelize';
-import { CustomLoggerService } from 'src/common/nest/logger/custom-logger.service';
-import { Cities } from 'src/infrastructure/database/sequelize/entities/cities.entity';
-import { Locations } from 'src/infrastructure/database/sequelize/entities/locations.entity';
-import { Properties } from 'src/infrastructure/database/sequelize/entities/properties.entity';
-import { States } from 'src/infrastructure/database/sequelize/entities/states.entity';
+import { CustomLoggerService } from '../../../common/nest/logger/custom-logger.service';
+import { Cities } from '../../../infrastructure/database/sequelize/entities/cities.entity';
+import { Locations } from '../../../infrastructure/database/sequelize/entities/locations.entity';
+import { Properties } from '../../../infrastructure/database/sequelize/entities/properties.entity';
+import { States } from '../../../infrastructure/database/sequelize/entities/states.entity';
 import { PieChartDto } from '../dtos/pie-chart.dto';
-import { CropsPlanted } from 'src/infrastructure/database/sequelize/entities/crops-planted.entity';
+import { CropsPlanted } from '../../../infrastructure/database/sequelize/entities/crops-planted.entity';
 
 export interface IDashboardService {
   countTotalOfProperties(): Promise<number>;

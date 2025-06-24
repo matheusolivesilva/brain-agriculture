@@ -3,9 +3,9 @@ import { GenerateStatisticsUsecase } from './usecases/generate-statistics.usecas
 import { Module } from '@nestjs/common';
 import { DashboardService } from './services/dashboard.service';
 import { DashboardController } from './dashboard.controller';
-import { Properties } from 'src/infrastructure/database/sequelize/entities/properties.entity';
-import { States } from 'src/infrastructure/database/sequelize/entities/states.entity';
-import { CropsPlanted } from 'src/infrastructure/database/sequelize/entities/crops-planted.entity';
+import { Properties } from '../../infrastructure/database/sequelize/entities/properties.entity';
+import { States } from '../../infrastructure/database/sequelize/entities/states.entity';
+import { CropsPlanted } from '../../infrastructure/database/sequelize/entities/crops-planted.entity';
 
 @Module({
   controllers: [DashboardController],

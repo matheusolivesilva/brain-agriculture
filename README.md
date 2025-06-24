@@ -36,6 +36,12 @@ Inside the container, you should run `npm test` in order to execute the unit/int
 Each file is followed by a `.spen` file with the unit test, except the integration tests, those are located in the `tests` directory.
 
 ## 📝 Docs
+You'll have two ways to learn more about this project: Using Postman or Swagger.
+### Postman Collection
+You may access the collection, download it, import and use here: [Postman collection](https://github.com/matheusolivesilva/brain-agriculture/blob/main/docs/Brain%20Agriculture.postman_collection.json)
+
+
+### Swagger
 To open docs you should run the project and access http://localhost:3000/api , you'll see the documentation made with Swagger as the print below shows:
 ![image](https://github.com/user-attachments/assets/d6733b6a-fc1e-4bd9-a67b-f0d8dc92a45c)
 

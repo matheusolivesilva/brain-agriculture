@@ -1,73 +1,57 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Brain Agriculture
+This API is responsible to manage agriculture, manage and mantain producers, properties, harvests and crops. Also have some statistics with insights regarding crops, properties and locations.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## 📝 Requirements
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+- [Docker](https://www.docker.com/get-started/)
+- [NodeJs](https://nodejs.org/en/download/current)
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 💡 Features
+Made using principles of Clean Architecture and Domain Drivem Design, the general structure (with project structure) is represented in the diagram below:
+![diagram](https://github.com/user-attachments/assets/dd2c7779-969a-4bc6-80ef-d4b3579783c7).
 
-## Installation
+## 🔍 Logs and Tracing:
+For logs was used the OpenTelemetry, which can be integrated with other observability/logging tools such as Grafana, Datadog, etc... Example of logs using OpenTelemetry:
+![image](https://github.com/user-attachments/assets/c8dc918c-c071-48bf-a11a-bad32a0e536f)
 
-```bash
-$ npm install
+
+## 🚀 How to Run?
+For this project would be better for you to have Docker and Docker Compose on your machine.
+
+### 🐋 Using Docker:
+Simply run:
+```console
+foo@bar:~$ docker-compose up
+```
+The docker console will be attached to your terminal, starting Node and PostgreSQL.
+
+## ✅ Testing
+To test you should first access the node terminal using:
+```console
+foo@bar:~$ docker-compose exec app bash
 ```
 
-## Running the app
+Inside the container, you should run `npm test` in order to execute the unit/integration tests or `npm run test:cov` to run the tests with coverage tests.
+Each file is followed by a `.spen` file with the unit test, except the integration tests, those are located in the `tests` directory.
 
-```bash
-# development
-$ npm run start
+## 📝 Docs
+To open docs you should run the project and access http://localhost:3000/api , you'll see the documentation made with Swagger as the print below shows:
+![image](https://github.com/user-attachments/assets/d6733b6a-fc1e-4bd9-a67b-f0d8dc92a45c)
 
-# watch mode
-$ npm run start:dev
+## ⚙️ Made With:
 
-# production mode
-$ npm run start:prod
-```
+- TypeScript 5.1.3
+- NodeJS 22.8.0
+- Postgres 14
+- NestJS 10.4.19
+- Jest 29.7.0
+- Docker 24.0.7
+- Docker Compose 1.29.2
 
-## Test
+## 🧑🏻‍💻 Author
 
-```bash
-# unit tests
-$ npm run test
+_Matheus Oliveira da Silva_ - [Github](https://github.com/matheusolivesilva) | [Linkedin](https://www.linkedin.com/in/matheusoliveirasilva/)
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).

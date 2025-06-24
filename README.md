@@ -1,7 +1,7 @@
 # Brain Agriculture
 This API is responsible to manage agriculture, manage and mantain producers, properties, harvests and crops. Also have some statistics with insights regarding crops, properties and locations.
 
-<div style="margin:0px auto">[![Watch the video](https://img.youtube.com/vi/fT_PBVnWPws/0.jpg)](https://www.youtube.com/watch?v=fT_PBVnWPws)</div>
+ [![Watch the video](https://img.youtube.com/vi/fT_PBVnWPws/0.jpg)](https://www.youtube.com/watch?v=fT_PBVnWPws)
 
 
 ## 📝 Requirements
